@@ -1,0 +1,152 @@
+.contenedor {
+  width: min(90%, 650px);
+  margin: 50px auto;
+}
+
+.encabezado {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.encabezado h1 {
+  color: #24563c;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.encabezado p {
+  color: #647067;
+}
+
+.tarjeta {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(30, 60, 40, 0.08);
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #d5dfd7;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.formulario input:focus {
+  border-color: #2f6f4e;
+  box-shadow: 0 0 0 3px rgba(47, 111, 78, 0.12);
+}
+
+.formulario button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2f6f4e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #24563c;
+}
+
+.resumen {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e8eee9;
+  color: #53645a;
+  font-size: 0.9rem;
+}
+
+.lista-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf1ed;
+}
+
+.tarea-contenido {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+
+.tarea-contenido input {
+  accent-color: #2f6f4e;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.completada .tarea-contenido span {
+  text-decoration: line-through;
+  color: #89958d;
+}
+
+.boton-eliminar {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #fbeaea;
+  color: #a73535;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.boton-eliminar:hover {
+  background: #f5d6d6;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  padding: 25px 0;
+  color: #647067;
+}
+
+.pie {
+  text-align: center;
+  margin-top: 25px;
+  color: #87928a;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    margin: 25px auto;
+  }
+
+  .tarjeta {
+    padding: 18px;
+  }
+
+  .encabezado h1 {
+    font-size: 1.8rem;
+  }
+
+  .formulario button {
+    padding: 12px;
+  }
+}
